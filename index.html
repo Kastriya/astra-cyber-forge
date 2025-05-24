@@ -1,26 +1,206 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>astra-cyber-forge</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>ASTRA - Forging the Future of Tech and Innovation</title>
+    <meta name="description" content="ASTRA - Elite tech group specializing in RC Car R&D, Cybersecurity, and Robotics" />
+    <meta name="author" content="ASTRA Team" />
 
-    <meta property="og:title" content="astra-cyber-forge" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="ASTRA - Forging the Future of Tech" />
+    <meta property="og:description" content="Elite tech group specializing in RC Car R&D, Cybersecurity, and Robotics" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <link rel="stylesheet" href="/src/styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Matrix Rain Background -->
+    <div class="matrix-bg" id="matrix"></div>
+    
+    <!-- Cyber Grid Background -->
+    <div class="cyber-grid"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+      <div class="nav-brand">
+        <span class="logo-text">ASTRA</span>
+      </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#team" class="nav-link">Team</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+      </div>
+      
+      <div class="hero-content">
+        <h1 class="hero-title glitch" data-text="ASTRA">ASTRA</h1>
+        <p class="hero-subtitle">Forging the Future of Tech and Innovation</p>
+        <button class="cta-button" id="explore-btn">
+          <span>Explore the Mission</span>
+          <div class="button-glow"></div>
+        </button>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About ASTRA</h2>
+        
+        <div class="about-grid">
+          <div class="about-card founder-card" data-aos="fade-right">
+            <div class="card-glow"></div>
+            <h3>Founder</h3>
+            <div class="founder-info">
+              <span class="founder-name">AVSC (Himanshu)</span>
+              <span class="founder-role">HOD of Hacking</span>
+            </div>
+            <p class="tagline">"Driven by vision. Powered by skill."</p>
+          </div>
+
+          <div class="about-card mission-card" data-aos="fade-left">
+            <div class="card-glow"></div>
+            <h3>Our Mission</h3>
+            <p>ASTRA is a high-tech elite group involved in RC Car R&D, Cybersecurity, and Robotics. We're on a mission to dominate every major tech challenge.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">RC Car R&D</span>
+              <span class="tech-tag">Cybersecurity</span>
+              <span class="tech-tag">Robotics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Mission Events</h2>
+        
+        <div class="events-grid">
+          <div class="event-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="event-icon">🏎️</div>
+            <h3>Technoxian</h3>
+            <p class="event-subtitle">World RC Car Challenge</p>
+            <p>Competing at the highest level of RC car innovation and engineering excellence.</p>
+            <div class="event-status">Active Mission</div>
+          </div>
+
+          <div class="event-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="event-icon">🛡️</div>
+            <h3>Mumbai CyberStorm</h3>
+            <p class="event-subtitle">CTF Championship</p>
+            <p>Elite cybersecurity challenges testing our hacking and defense capabilities.</p>
+            <div class="event-status">Engaged</div>
+          </div>
+
+          <div class="event-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="event-icon">🌐</div>
+            <h3>HackClub</h3>
+            <p class="event-subtitle">Global Hacker Community</p>
+            <p>Building the future of technology through collaborative innovation.</p>
+            <div class="event-status">Core Member</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Elite Operatives</h2>
+        
+        <div class="team-grid">
+          <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-avatar">
+              <div class="avatar-glow"></div>
+              <span class="avatar-text">AV</span>
+            </div>
+            <h4>AVSC (Himanshu)</h4>
+            <p class="member-role">HOD of Hacking</p>
+            <p class="member-description">Cybersecurity specialist and team founder</p>
+          </div>
+
+          <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-avatar">
+              <div class="avatar-glow"></div>
+              <span class="avatar-text">RC</span>
+            </div>
+            <h4>RC Engineer</h4>
+            <p class="member-role">Vehicle Systems</p>
+            <p class="member-description">Advanced RC car design and optimization</p>
+          </div>
+
+          <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-avatar">
+              <div class="avatar-glow"></div>
+              <span class="avatar-text">RB</span>
+            </div>
+            <h4>Robotics Lead</h4>
+            <p class="member-role">AI & Automation</p>
+            <p class="member-description">Next-gen robotics and AI integration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo-text">ASTRA</span>
+            <p>Forging the Future of Tech</p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="#" class="social-link">
+              <span class="social-icon">📧</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="social-icon">🐱</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="social-icon">💼</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="social-icon">🐦</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; ASTRA 2025. All rights reserved. | Built for the future.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/script.js"></script>
   </body>
 </html>
